@@ -1,0 +1,57 @@
+
+<p>
+Add trees and keep them evenly spaced.
+</p>
+
+<p>
+You are given a list of integers as input values.
+This is the position of the existing tree.
+You must return the minimum number of additional trees needed to make them evenly spaced.
+</p>
+<ul>
+    <li>Positions of the existing trees are already sorted.</li>
+    <li>All positions of trees are integers.</li>
+</ul>
+<img src='{{MEDIA}}example_01.png' title='example'>
+
+
+<div class="for_info_only">
+    <p><strong>Example:</strong></p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+</pre>
+{% else %}
+<pre class="brush: python" style="font-family:'Courier New',Courier;">
+evenly_spaced_trees([0, 2, 6]) == 1 # add to 4.
+evenly_spaced_trees([1, 3, 6]) == 3 # add to 2, 4 and 5.
+evenly_spaced_trees([0, 2, 4]) == 0 # no need to add.
+</pre>
+{% endif %}
+
+</div>
+
+<p><strong>Input: </strong>
+{% if interpreter.slug == "js-node" %}
+{% else %}
+The position of the existing trees. (list of integers)
+{% endif %}
+</p>
+
+<p><strong>Output: </strong>
+The minimum number of additional trees. (an integer)
+</p>
+
+
+<p>
+<strong>How it is used:</strong><br>
+Landscape design.
+</p>
+
+<p>
+<strong>Precondition:</strong><br>
+<ul>
+    <li>0 &le; Position of tree &le; 100</li>
+    <li>3 &le; The existing trees</li>
+</ul>
+</p>
+
